@@ -3,4 +3,12 @@ build:
     - name: shared
       steps:
         - type: gradle
-          targetExpression: //:shared:build
+          targetExpression: :shared:build
+    - name: api
+      steps:
+        - type: gradle
+          targetExpression: :api
+    - name: person-service
+      steps:
+        - type: gradle
+          targetExpression: :services:person-service
