@@ -1,0 +1,6 @@
+build:
+  partitions:
+    - name: shared
+      steps:
+        - type: gradle
+          targetExpression: //:shared:build
